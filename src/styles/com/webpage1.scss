@@ -1,0 +1,43 @@
+
+//장비현황 이미지 랩 박스
+.equipBox { 
+    width: 16%; 
+    float: left; 
+    margin-right:0.6%; 
+    margin-bottom:30px; 
+    
+}
+
+ .equipBox .imgWrap {  
+     width: 100%;
+    //  background: url(@/../styles/img/pic1.jpg) no-repeat 0 0;
+     background-size: 100%;
+ }
+
+.box-titleWrap { text-align: left; }
+.box-titleWrap>img { display: inline-block; }
+.iconWrap { position: absolute; left: 0; bottom: 0;}
+.iconWrap>img { width:45%; }
+.imgWrap:after { content:''; position: absolute; left:0; bottom: 0; width:100%;  height:30%;  background-image: linear-gradient(to bottom,transparent,rgba(0,0,0, .7) ); }
+// .imgWrap.open1:after { content:''; position: absolute; left:0; bottom: 0; width:100%;  height:100%;  background-image: linear-gradient(to bottom, transparent, #FFD54F); }
+// .imgWrap.open2:after { content:''; position: absolute; left:0; bottom: 0; width:100%;  height:100%;  background-image: linear-gradient(to bottom, transparent, #F06292); }
+// 장비현황 이미지
+.imgWrap>img { width:100%; display: block;}
+
+//버튼
+.btnWrap { width:100%;  border: 1px solid #ccc; border-radius: 5px; margin-top: 10px; }
+.btn-row1 {  width:100%; height: 45px; }
+.btn-row2 {  width:100%; height: 45px; border-top:1px dotted #ccc; }
+
+
+
+
+
+
+
+
+
+
+
+
+

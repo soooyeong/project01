@@ -1,0 +1,33 @@
+
+.page3-content .card div input { outline: 0; width: 20%; }
+.page3-content .card div input::placeholder { color: #999 }
+.page3-content .card div .search-btn { min-width: 10px; padding:7px; }
+
+// 테이블
+.table-wrap3 { width: 100%; margin: 20px 0 20px 0; }
+.table-wrap3>table { width: 100%; table-layout: fixed; }
+.table-wrap3>table>thead>tr { width: 100%; }
+.table-wrap3>table>thead>tr>th { border-top:2px solid #9ea0a3; font-size: $table_th_fontSize; font-weight:500; border-bottom:1px solid #e1e4e8; border-right: 1px solid #e1e4e8; height:40px; background:#f4f6f7; }
+.table-wrap3>table>thead>tr>th:first-child { border-left: 1px solid #e1e4e8; }
+
+.table-wrap3>table>tbody>tr { width: 100%; }
+.table-wrap3>table>tbody>tr>td { 
+    font-size:$table_td_fontSize; 
+    font-weight:500; 
+    border-bottom:1px solid #e1e4e8; 
+    border-right: 1px solid #e1e4e8; 
+    height:40px; 
+    span { 
+        display: inline-block;
+        position: absolute;
+        top:7px;
+        left:70px;
+        width:20px; height: 20px; background: url(@/../styles/img/select-arrow.png) no-repeat 0 100%;
+        transform: rotate(-90deg);
+    }
+    }
+.table-wrap3>table>tbody>tr>td:first-child { 
+    border-left: 1px solid #e1e4e8; 
+    // background: url(@/../styles/img/select-arrow.png) no-repeat 98% 50%; 
+}
+.table-wrap3>table>tbody>tr:last-child>td { border-bottom:2px solid #9ea0a3; font-size:15px; font-weight:500; border-right: 1px solid #e1e4e8; height:40px; background:#f4f6f7; }

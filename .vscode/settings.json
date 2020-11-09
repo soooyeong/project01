@@ -1,0 +1,21 @@
+{
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    // "[javascript]": {
+    //     "editor.formatOnSave": false,
+    //     "editor.formatOnPaste": false
+    // },
+    // "html.format.wrapLineLength": 400,
+    // "eslint.autoFixOnSave": true,
+    // "vetur.format.defaultFormatterOptions": {
+    //     "prettyhtml": {
+    //         "printWidth": 400,
+    //     },
+    //     "prettier": {
+    //         "printWidth": 400
+    //     }
+    // },
+    // "editor.codeActionsOnSave": {
+    //     "source.fixAll.eslint": true
+    // }
+}
