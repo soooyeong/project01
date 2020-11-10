@@ -35,7 +35,7 @@
       <div class="menu-border2 nav-btn2">
         <router-link to="/webPage2">
           <v-btn
-            class="nav-btn1"
+            class="nav-btn"
             color="transparent"
             style="box-shadow: none; height: 100px; padding-top: 10px"
             width="100"
@@ -48,21 +48,23 @@
       </div>
 
       <div class="menu-border2">
-        <v-btn
-          class="nav-btn1"
-          color="transparent"
-          style="box-shadow: none; height: 100px; padding-top: 10px"
-          width="100"
-          height="100"
-        >
-          <div>
-            <img src="../styles/img/nav_icon_03.png" alt="" />
-          </div>
-        </v-btn>
+        <router-link to="/webPage3">
+          <v-btn
+            class="nav-btn"
+            color="transparent"
+            style="box-shadow: none; height: 100px; padding-top: 10px"
+            width="100"
+            height="100"
+          >
+            <div>
+              <img src="../styles/img/nav_icon_03.png" alt="" />
+            </div>
+          </v-btn>
+        </router-link>
       </div>
       <div class="menu-border2">
         <v-btn
-          class="nav-btn1"
+          class="nav-btn"
           color="transparent"
           style="box-shadow: none; height: 100px; padding-top: 10px"
           width="100"
@@ -76,7 +78,7 @@
 
       <div class="menu-border2">
         <v-btn
-          class="nav-btn1"
+          class="nav-btn"
           color="transparent"
           style="box-shadow: none; height: 100px; padding-top: 10px"
           width="100"

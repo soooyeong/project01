@@ -85,56 +85,154 @@
                       >
                     </div>
                   </v-card>
-                  <div class="table-wrap3">
-                    <table>
-                      <thead>
-                        <tr>
-                          <th colspan="3">name1</th>
-                          <th>name2</th>
-                          <th>name3</th>
-                          <th>name4</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td colspan="3" class="relative">
-                            content1
-                            <span></span>
-                          </td>
-                          <td>content2</td>
-                          <td>content3</td>
-                          <td>content4</td>
-                        </tr>
-                        <tr>
-                          <td colspan="3">content1 <span></span></td>
-                          <td>content2</td>
-                          <td>content3</td>
-                          <td>content4</td>
-                        </tr>
-                        <tr>
-                          <td colspan="3">content1 <span></span></td>
-                          <td>content2</td>
-                          <td>content3</td>
-                          <td>content4</td>
-                        </tr>
-                        <tr>
-                          <td colspan="3">content1 <span></span></td>
-                          <td>content2</td>
-                          <td>content3</td>
-                          <td>content4</td>
-                        </tr>
-                        <tr>
-                          <td colspan="3">content1 <span></span></td>
-                          <td>content2</td>
-                          <td>content3</td>
-                          <td>content4</td>
-                        </tr>
-                        <tr>
-                          <td colspan="6">total <span></span></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                  <table class="table-wrap3">
+                    <thead>
+                      <tr>
+                        <th colspan="3">name1</th>
+                        <th>name2</th>
+                        <th>name3</th>
+                        <th>name4</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td
+                          colspan="3"
+                          class="relative"
+                          @click="showSub = !showSub"
+                        >
+                          content1
+                          <span
+                            class="arrow"
+                            v-bind:class="{ active: isActive }"
+                          ></span>
+                        </td>
+                        <td>content2</td>
+                        <td>content3</td>
+                        <td>content4</td>
+                      </tr>
+
+                      <!-- 클릭시 열리는 테이블 -->
+                      <tr class="tr" v-if="showSub" @close="showSub = false">
+                        <td colspan="6" class="td">
+                          <table class="table-wrap3">
+                            <tbody>
+                              <tr>
+                                <td colspan="3">sub1-1</td>
+                                <td colspan="1">
+                                  name3<label for=""
+                                    ><input type="checkbox"
+                                  /></label>
+                                </td>
+                                <td colspan="1">
+                                  name3<label for=""
+                                    ><input type="checkbox"
+                                  /></label>
+                                </td>
+                                <td colspan="1">
+                                  name3<label for=""
+                                    ><input type="radio"
+                                  /></label>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td colspan="3">sub1-2</td>
+                                <td colspan="1">
+                                  name3<label for=""
+                                    ><input type="checkbox"
+                                  /></label>
+                                </td>
+                                <td colspan="1">
+                                  name3<label for=""
+                                    ><input type="checkbox"
+                                  /></label>
+                                </td>
+                                <td colspan="1">
+                                  name3<label for=""
+                                    ><input type="radio"
+                                  /></label>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td colspan="3">sub1-3</td>
+                                <td colspan="1">
+                                  name3<label for=""
+                                    ><input type="checkbox"
+                                  /></label>
+                                </td>
+                                <td colspan="1">
+                                  name3<label for=""
+                                    ><input type="checkbox"
+                                  /></label>
+                                </td>
+                                <td colspan="1">
+                                  name3<label for=""
+                                    ><input type="radio"
+                                  /></label>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td colspan="3">sub1-4</td>
+                                <td colspan="1">
+                                  name3<label for=""
+                                    ><input type="checkbox"
+                                  /></label>
+                                </td>
+                                <td colspan="1">
+                                  name3<label for=""
+                                    ><input type="checkbox"
+                                  /></label>
+                                </td>
+                                <td colspan="1">
+                                  name3<label for=""
+                                    ><input type="radio"
+                                  /></label>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <!-- 클릭시 열리는 테이블 -->
+
+                      <tr>
+                        <td colspan="3" class="relative">
+                          content1 <span class="arrow"></span>
+                        </td>
+                        <td>content2</td>
+                        <td>content3</td>
+                        <td>content4</td>
+                      </tr>
+
+                      <tr>
+                        <td colspan="3" class="relative">
+                          content1 <span class="arrow"></span>
+                        </td>
+                        <td>content2</td>
+                        <td>content3</td>
+                        <td>content4</td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" class="relative">
+                          content1 <span class="arrow"></span>
+                        </td>
+                        <td>content2</td>
+                        <td>content3</td>
+                        <td>content4</td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" class="relative">
+                          content1 <span class="arrow"></span>
+                        </td>
+                        <td>content2</td>
+                        <td>content3</td>
+                        <td>content4</td>
+                      </tr>
+                      <tr>
+                        <td class="" colspan="6">total</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </v-card>
               </div>
             </v-card>
@@ -155,13 +253,30 @@ export default {
     Header,
     Nav,
   },
+
   data() {
     return {
       tab: null,
       items: ["tab01", "tab02", "tab03"],
+      showSub: false,
+      isActive: true,
     };
   },
 };
 </script>
 <style lang="scss">
 </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

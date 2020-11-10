@@ -28,7 +28,7 @@ th,td { vertical-align:middle; text-align: left; padding-left: 10px; }
 .mangiColor1 { background: #ffe2e7 !important; color:#a2253b !important; font-weight: bold;}
 .mangiColor2 { background: #eee; color:#999; }
 
-.nav-btn1:hover:after { 
+.nav-btn:hover:after { 
     content:''; 
     z-index: 1; 
     position: absolute; 
@@ -36,7 +36,7 @@ th,td { vertical-align:middle; text-align: left; padding-left: 10px; }
     width:120%; height: 101px; 
     background: rgba(255,255,255, .3); 
     }
-.nav-btn1:focus:after { 
+.nav-btn:focus:after { 
     content:''; 
     z-index: 1; 
     position: absolute; 
